@@ -38,3 +38,13 @@
 .project-info:hover .description-box {
     display: block;
 }
+
+.typing-container {
+    font-family: monospace;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+.required_field {
+    color: red;
+}
