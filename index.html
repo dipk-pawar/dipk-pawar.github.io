@@ -1,457 +1,664 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<title>Dipak Pawar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-  <title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/unicons.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-  <!-- MAIN STYLE -->
-  <link rel="stylesheet" href="css/tooplate-style.css">
-  <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-  <!--
+	<link rel="stylesheet" href="css/aos.css">
 
-Tooplate 2115 Marvel
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
-https://www.tooplate.com/view/2115-marvel
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 
--->
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-sm navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Dipak</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Dipak Pawar</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-          </li>
-        </ul>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/dipak-pawar-fullimage-removebg-preview.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Dipak Pawar</span></h1>
 
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-              Color mode
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Python Developer  ',
+										'Django Developer  ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>A Senior Python Developer</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="https://www.linkedin.com/in/dipak-pawar-9806b113a/"
+										class="btn btn-primary py-3 px-4">Linkedin</a>
+									<a href="https://github.com/dipk-pawar"
+										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/dipak-pawar-photoaidcom-cropped.png"
+												class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Dipak Pawar</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Senior Python
+													Developer</span></p>
+											<p><span class="title-s">Experience: </span> <span>5+ Years</span></p>
+											<p><span class="title-s">Address: </span> <span>Gujarat, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>PYTHON</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>DJANGO</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>DJANGO REST FRAMEWORK</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>Crafting compelling digital experiences is my passion. With four years of hands-on
+									Python development experience under my belt, coupled with expertise in Django and
+									Django Rest Framework, I thrive in the realm of backend development. From
+									architecting robust solutions to writing efficient algorithms, I bring a dynamic
+									energy to every project.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Sr. Python Developer</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master of Computer
+											Application</span></li>
+									<li class="d-flex"><span>Tech Skills: </span> <span> Python, Django, Django Rest
+											Framework, Docker, Celery</span></li>
+									<li class="d-flex"><span>Databases:</span> <span>MySQL, Postgres, Snowflake</span>
+									</li>
+									<li class="d-flex"><span>Other Skills:</span> <span> Github, Gitlab, Postman, Jira,
+											Sengrid, Sentry, Mailjet, Datadog</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Gujarati</span></li>
+
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/dipak-pawar-9806b113a/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Experienced Python Developer with 5 years in crafting robust solutions using Django and Django
+						Rest Framework. Adept at leveraging programming expertise to build scalable applications and
+						drive innovation.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020-Present</span>
+						<h2>Sr. Python Developer</h2>
+						<span class="position">Kanhasoft</span>
+						<p class="mt-4">Kanhasoft, a prominent software development firm, specializes in delivering
+							innovative solutions for various industries. During my tenure, I contributed to several key
+							projects including RoomPriceGenie and Dashna.
+						<ul>
+							<li>Developed RoomPriceGenie, a dynamic pricing software for small hotels that optimizes
+								pricing and boosts revenue by 15-20%. Utilized Python, Django, and Django Rest Framework
+								for its development.</li>
+							<li>Designed and implemented Dashna, a web application integrating Walmart's advertiser API.
+								Enabled campaign creation, report generation, and item retrieval through comprehensive
+								API integrations.</li>
+							<li>Applied Python and Django to enhance backend functionalities, optimize data processing,
+								and ensure robust performance across various applications.</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019-2020</span>
+						<h2>Jr. Python Developer</h2>
+						<span class="position">Itechnotion Pvt Ltd.</span>
+						<p class="mt-4">Itechnotion Pvt Ltd. is a dynamic tech firm specializing in innovative solutions
+							for various sectors. During my tenure, I worked on the Wellnessta project, a platform
+							designed to simplify the process of finding and booking top-tier salons, luxury spas, and
+							wellness services such as meditation and naturopathy.
+						<ul>
+							<li>Developed and maintained application features using Python and Flask, contributing to a
+								more efficient and user-friendly platform.</li>
+							<li>Utilized HTML and Bootstrap to design responsive and visually appealing user interfaces,
+								enhancing the overall user experience.</li>
+							<li>Collaborated on backend integrations and feature enhancements, leading to improved
+								performance and functionality of the Wellnessta project.</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2016-2019</span>
+						<h2>Master of Computer Application</h2>
+						<span class="position">Gujarat Vidyapith</span>
+						<p class="mt-4">Grade: First class distinction.</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2012-2015</span>
+						<h2>Bachlor of Computer Application</h2>
+						<span class="position">Shri. K.M. & Smt. K.K Savjani BBA/BCA College</span>
+						<p class="mt-4">Grade: First class distinction.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<!-- <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p> -->
+					<p><a href="docs/Dipak_sr_python_dev_2024.pdf" class="btn btn-primary py-4 px-5" target="_blank" download>Download CV</a></p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are the sample projects on Python, Django and Django Rest Framework.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://roompricegenie.com/" class="block-20 zoom-effect" style="background-image: url('images/RoomPriceGenie.png');" target="_blank">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://roompricegenie.com/" target="_blank">RoomPriceGenie</a></h3>
+							<p>Roompricegenie is basically a hospitality management system, which is main concept to achieve the revenue for the small hotels. Increase hotel revenue before and during guests stay with a unique hotel upsell bidding tool. RoomPriceGenie is dynamic pricing software that can automatically set your prices, and helps hotels and serviced apartments to increase revenue by 15-20 Percentage.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/like-lemba.png');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a
+									href="#">LikeLemba</a></h3>
+							<p>This project was about Crowd funding and Credit society together. For crowd funding portion, User can create an event for fund and user can invite N number of users for funding. This event depends on the user preference, if it’s a public event then other users can also send funds and if it’s a private event then only invited users can send funds.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://www.dashna.com/"
+							class="block-20 zoom-effect" style="background-image: url('images/Dashna.png');" target="_blank">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://www.dashna.com/" target="_blank">Dashna</a></h3>
+							<p>In this web application, we have integrated a advertiser API of walmart. in this we have to give option for create campaign from our systems, we have integrated an apis of campaign operations, some reports apis which provided by walmart and marketplace APIs which is used for fetch items from walmart.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/hr-master.jpg');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#">HRMaster</a></h3>
+							<p>The HRMaster project is focused on developing a gamified Human Resource Information System (HRIS) tailored for the gaming industry. The platform aims to integrate engaging gamification elements into traditional HR processes, making them more enjoyable and motivating for employees.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://wellnessta.com/" class="block-20 zoom-effect" style="background-image: url('images/wellnessta.png');" target="_blank"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://wellnessta.com/" target="_blank">Wellnessta</a></h3>
+							<p>Wellnessta provides you with a fast and incredible way of finding and booking the Best salon, luxury spa and other services like Meditation and Naturopathy near you, Vendor and Admin Panel also included in this Project.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://vendor.wellnessta.com/" class="block-20 zoom-effect" style="background-image: url('images/vendor-wellnessta.png');" target="_blank"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://vendor.wellnessta.com/" target="_blank">Vendor Wellnessta</a></h3>
+							<p>Vendor Wellnessta offers a comprehensive platform for managing multiple outlets for your shop. With this vendor login, you can easily add and manage your locations, streamline your operations, and optimize your business performance.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="20">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="15">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
             </div>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
+          </div> -->
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="500">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <!-- ABOUT -->
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-          <div class="about-text">
-            <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
-            <h1 class="animated animated-text">
-              <span class="mr-2">Hey folks, I'm</span>
-              <div class="animated-info">
-                <span class="animated-item">Dipak Pawar</span>
-                <span class="animated-item">Python Developer</span>
-                <span class="animated-item">Django Developer</span>
-              </div>
-            </h1>
-            <br>
-            <div class="typing-container" id="typing-container"></div>
-            <div class="custom-btn-group mt-4">
-              <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-              <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image svg">
-            <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="project py-5" id="project">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-11 text-center mx-auto col-12">
-
-          <div class="col-lg-8 mx-auto">
-            <h2>Projects I have developed for my clients 👨‍💻</h2>
-          </div>
-
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="project-info">
-                <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
-                <div class="description-box">
-                  <h3>Project Title</h3>
-                  <hr> <!-- Underline -->
-                  <p>Description of the project.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="project-info">
-                <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
-                <div class="description-box">
-                  <h3>Project Description 02</h3>
-                  <p>Description of the second project.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="project-info">
-                <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="project-info">
-                <img src="images/project/online_shopping_website.png" class="img-fluid image-with-shadow"
-                  alt="project image">
-                <div class="description-box">
-                  <h3 style="color: black;">GreatKart - Your Ultimate Online Shopping Destination</h3>
-                  <hr>
-                  <p>GreatKart is a dynamic and user-friendly e-commerce platform meticulously crafted using
-                    Python, Django, HTML, Bootstrap, JavaScript, and Jinja templating.</p>
-                  <hr>
-                  <p>With seamless integration of PayPal payment gateway and MySQL database, GreatKart offers a
-                    hassle-free shopping experience for users seeking a diverse range of products including clothing,
-                    footwear,
-                    electronics, sports gear, and much more.</p>
-                  <hr>
-                  <p><b>Technologies Used:</b></p>
-                  <p>Python,Django,HTML,Bootstrap,JavaScript,Jinja Templating,MySQL Database,PayPal Integration</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="project-info">
-                <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4">Experiences</h2>
-
-          <div class="timeline">
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2022</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>Sr. Python and Sr. Django Developer</span><small>--</small></h3>
-                <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac
-                  fermentum nunc, a faucibus nunc.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2021</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>Sr. Python / Django Developer</span><small>--</small></h3>
-                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2020</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>Python Developer</span><small>--</small></h3>
-                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque
-                  habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2019</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>Python Intern<small>--</small></h3>
-                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna
-                  consequat viverra.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Educations</h2>
-
-          <div class="timeline">
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2019</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>MCA</span><small>Master of Computer Application</small></h3>
-                <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2016</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>BCA</span><small>Bachlor of Computer Application</small></h3>
-                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to
-                  download HTML templates without any login or email.</p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2013</span>
-              </div>
-              <div class="timeline-info">
-                <h3><span>11th - 12th </span><small>Commerce</small></h3>
-                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute
-                  this template without a permission.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact py-5" id="contact">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-5 mr-lg-5 col-12">
-          <!-- <div class="google-map w-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div> -->
-          <div class="google-map w-100">
-            <iframe
-              src="https://maps.google.com/maps?q=sutrapada,%20Gujarat+(Dipak%20Pawar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-
-          <!-- <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=sutrapada,%20Gujarat+(Dipak%20Pawar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe></div> -->
-
-          <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-            <div class="contact-info-item">
-              <h3 class="mb-3 text-white">Say hello</h3>
-              <p class="footer-text mb-0">9157413669</p>
-              <p><a href="mailto:hello@company.co">dipakpython@gmail.com</a></p>
-            </div>
-
-            <!-- <ul class="social-links">
-                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
-                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
-                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
-                </ul> -->
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <div class="contact-form">
-            <h2 class="mb-4">Interested to work together? Let's talk</h2>
-            <p id="my-form-status"></p>
-            <p id="error-message" style="color: red; display: none;">Please fill in all required fields.</p>
-            <form id="my-form" action="https://formspree.io/f/xdoqgpbg" method="POST">
-              <div class="row">
-                <div class="col-lg-6 col-12">
-                  <label>Name<span class="required_field">*</span></label>
-                  <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required>
-                </div>
-
-                <div class="col-lg-6 col-12">
-                  <label>Email<span class="required_field">*</span></label>
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-12">
-                  <label>Message<span class="required_field">*</span></label>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"
-                    required></textarea>
-                </div>
-
-                <div class="ml-lg-auto col-lg-5 col-12">
-                  <button class="form-control" id="my-form-button">Submit</button>
-                  <!-- <div class="loader" id="my-form-loader"></div> -->
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center">Copyright &copy; 2022. All rights reserved</p>
-          <p class="copyright-text text-center">Designed by <a rel="nofollow" href="#">Dipak Pawar</a></p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/Headroom.js"></script>
-  <script src="js/jQuery.headroom.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/custom.js"></script>
-  <script>
-    // Text to be typed
-    const textToType = `Crafting compelling digital experiences is my passion. With four years of hands-on Python development experience under
-                      my belt, coupled with expertise in Django and Django Rest Framework, I thrive in the realm of backend development. From
-                      architecting robust solutions to writing efficient algorithms, I bring a dynamic energy to every project.`;
-
-    // Index to keep track of which character to show next
-    let index = 0;
-
-    // Function to show the text with typing effect
-    function typeText() {
-      // Get the typing container element
-      const typingContainer = document.getElementById('typing-container');
-
-      // Add the next character to the text
-      typingContainer.innerHTML += textToType[index];
-      index++;
-      // If we haven't reached the end of the text, schedule the next character to be typed
-      if (index < textToType.length) {
-        setTimeout(typeText, 50); // Adjust the typing speed here (in milliseconds)
-      }
-    }
-
-    // Start typing when the page loads
-    window.onload = typeText;
-  </script>
-
-  <script>
-    var form = document.getElementById("my-form");
-    // var loader = document.getElementById("my-form-loader"); // Get loader element
-    var errorMessage = document.getElementById("error-message");
-
-    async function handleSubmit(event) {
-      event.preventDefault();
-      // loader.style.display = "block"; // Show loader
-
-      // Check if any required field is empty
-      var inputs = form.querySelectorAll('input[required], textarea[required]');
-      var hasEmptyFields = false;
-      inputs.forEach(input => {
-        if (!input.value.trim()) {
-          hasEmptyFields = true;
-          return;
-        }
-      });
-
-      if (hasEmptyFields) {
-        errorMessage.style.display = "block";
-        return;
-      } else {
-        errorMessage.style.display = "none";
-      }
+		<!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</section>
 
 
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      try {
-        var response = await fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission 😊";
-          status.style.color = "green"; // Set text color to green
-          form.reset();
-        } else {
-          var responseData = await response.json();
-          if (Object.hasOwnProperty.call(responseData, 'errors')) {
-            status.innerHTML = responseData["errors"].map(error => error["message"]).join(", ");
-          } else {
-            status.innerHTML = "Oops! Something went wrong";
-            status.style.color = "red";
-          }
-        }
-      } catch (error) {
-        status.innerHTML = "Oops! Something went wrong";
-        status.style.color = "red";
-      } finally {
-        console.log("form submitted")
-        // loader.style.display = "none"; // Hide loader
-      }
-    }
 
-    form.addEventListener("submit", handleSubmit);
-  </script>
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Gujarat, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://0101010101">+91 9157413669</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:dipakpython@gmail.com">dipakpython@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a href="docs/Dipak_sr_python_dev_2024.pdf" target="_blank" download>resumelink</a></p>
+					</div>
+				</div>
+
+				<!-- <div class="container">
+					<br>
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a<span> Question? </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77"
+									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+						</div>
+					</div>
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span
+									class="icon-youtube"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span
+									class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span
+									class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span
+									class="icon-instagram"></span></a></li>
+					</ul>
+					<br>
+				</div> -->
+			</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | Dipak Pawar
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>
